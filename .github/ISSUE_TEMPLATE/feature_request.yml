@@ -1,0 +1,16 @@
+name: Feature request
+description: Propose a Mubble feature or data integration.
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What would this help you do?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested behavior
+      description: For a new dataset, include the authoritative source, coverage, timing, and known usage terms.
+    validations:
+      required: true

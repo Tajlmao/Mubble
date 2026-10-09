@@ -1,0 +1,16 @@
+node_modules/
+.next/
+public/cesium/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+playwright-report/
+test-results/
+
+.venv/
+__pycache__/
+*.py[cod]
+.cache/
+.DS_Store
+*.log

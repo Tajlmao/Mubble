@@ -1,0 +1,61 @@
+{
+  "name": "mubble",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Mubble — an interactive weather and Earth explorer with NASA satellite imagery, NOAA forecasts, radar, and cyclone advisories.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tajlmao/Mubble.git"
+  },
+  "homepage": "https://github.com/Tajlmao/Mubble#readme",
+  "bugs": {
+    "url": "https://github.com/Tajlmao/Mubble/issues"
+  },
+  "keywords": [
+    "mubble",
+    "weather",
+    "earth",
+    "globe",
+    "satellite",
+    "cesium",
+    "nextjs"
+  ],
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "test:e2e": "playwright test",
+    "screenshots": "node scripts/capture.mjs",
+    "postinstall": "node scripts/prepare-cesium.mjs",
+    "lint": "eslint .",
+    "format": "prettier --write app components lib tests scripts/*.mjs *.ts *.mjs"
+  },
+  "dependencies": {
+    "@fontsource/manrope": "5.2.8",
+    "cesium": "1.146.0",
+    "fast-xml-parser": "5.11.2",
+    "fflate": "0.8.3",
+    "lucide-react": "1.54.0",
+    "next": "16.4.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "undici": "7.29.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^16.4.0",
+    "prettier": "^3.6.2",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3"
+  }
+}
